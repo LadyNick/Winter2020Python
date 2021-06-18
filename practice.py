@@ -8,3 +8,5 @@ If you do python, it takes the next lines as python code,
 so use exit() to exit if you do that 
 '''
 
+'''Variable Types'''
+  

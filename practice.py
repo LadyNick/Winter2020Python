@@ -64,4 +64,71 @@ print(dictex)               #{'name': 'Nikki', 'bday': 1013}
 print(dictex['name'])       #Nikki, ** still does automatic newline
 print(dictex,dictex['name'],dictex['bday'])  #this prints the above w spaces, and the 1013 at the end
 
+'''
+int(x[,base])           converts x to integer, base specifies the base if x is string
+long(x[,base])          to long int
+float(x)                to floating point num
+complex(real [,imag])   creates a complex number
+str(x)                  converts to string representation
+repr(x)                 to expression string
+eval(str)               evaluates a string and returns and object
+tuple(s)                converts s to a tuple
+list(s)                 to a list
+set(s)                  to a set
+dict(d)                 creates dictionary, d must be a sequence of (word,def) tuples
+frozenset(s)
+chr(x)
+unichr(x)               int to unicode char
+ord(x)                  single char to int val
+hex(x)                  int to hex string
+oct(x)                  int to octal string
+'''
 
+'''BASIC OPERATORS & DECISION MAKING'''
+
+''' 
++ add, - sub, * mult, / div, % mod, ** expo, == equal, != not equal, <> not equal
+> < >= <= = += add and assign, -= sub assign, *= assign, so on
+| or, ^ XOR, & and, ~ ones complement, << binary left shift, >> right shift
+'''
+
+'''
+if, else, elif (else if), you put a colon after every if and else and elif 
+if blah blah:
+else blah:
+**you can also write it in the same line
+if ( blah ) : do blah blah
+'''
+
+#I already know how loops work 
+candies = ['lolipop', 'gum', 'choco'] #list 
+num = 1;
+for candy in candies:
+    print(num,":",candy)
+    num+=1
+#prints... remember theres spaces
+#1 : lolipop
+#2 : gum
+#3 : choco
+
+'''
+%d is a placeholder for a number, %s for string, %c for char
+'''
+
+#for num in range(10,20) iterates from 10 to 20
+#for i in range(2,num)   iterates from 2 to whatever num is 
+#print('%d equals %d * %d' % (num,i,j)) prints the vlaues in the vars at the locations
+#breaks are used to move to the earliest for loop based on the least amount of indentation
+#or it can go to the next for loops, it can cut time 
+'''
+for blah
+    for i in blach
+        if blah
+            a
+            b
+            c
+            break
+    else
+        blah
+                break
+'''

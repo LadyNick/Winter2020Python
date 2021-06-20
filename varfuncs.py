@@ -32,13 +32,15 @@
 
 
 '''STRINGS'''
+#(USE . FOR FUNCTIONS)
 #print(string[x:y]) this will print the string from index x to yth place of string
 #^^[x] will give char at x index
 
 #print(string[:x]) this will print the string from the beginnign to the xth character
 # in        returns true if a char exists in given string
 # not in    returns true if char doesnt exist in string
-#%% is if you want one signle %
+
+# %% is if you want one signle %
 #printing \\ will print one single \
 #doing print(r"string") will print the raw version of the string, as in it will take the special characters as is
 
@@ -72,5 +74,51 @@
 #strip([chars]) performs both lstrip and rstrip on string
 #swapcase() inverts casing
 #title() returns titlecased version of string
+
+
+'''THE TWO TYPES OF SEQUENCES ARE LISTS AND TUPLES'''
+'''LISTS USE [ ] TUPLES USE ( )'''
+
+'''LISTS'''
+#del list[index] to delete list element
+#TO PUT A SEQUENCE LITERAL DO [x,y,z]
+#len([x,y,z]) or len(list) will return size of list
+#for x in [1,2,3]: print x   --> 1 2 3 
+#list[negative number] count from the right, index
+
+#list.append(obj) appends obj to list
+# .count(obj) count how many times obj is in list
+# .extend(seq) appends the contents of seq to list
+# .index(obj) returns lowest index in list that obj appears
+# .insert(index,obj) inserts obj into list at offset index
+# .pop(obj=list[-1]) removes and returns last obj from list
+# .reverse() reverses objects of list in place
+# .sort([func]) sorts objects of list, use compare fun if given
+
+
+'''TUPLES'''
+#tup1=()
+#tup1(50,) to make a tuple containing a single value you have to include a comma
+#del tup to delete tup
+#you cannot update tuples
+#cmp(tuple1,tuple2) compares elements of both tuples, no idea what it does
+#len(tuple) implied
+#max(tuple) returns item with max val
+#min(tuple) implied
+#tuple(seq) converts a list into tuple
+
+
+'''DICTIONARY'''
+'''DICT USES { } WHEN MAKING THEM'''
+#del dict to delete entire dict
+#.clear to remove all entries
+#del dict['word'] to delete entry w word as word
+#**same key cant be used more than once
+#len(dict) implied
+#str(dict) producs 
+#type(variable) returns the type of the passed variable
+
+
+
 
 

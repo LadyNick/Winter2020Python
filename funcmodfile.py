@@ -101,6 +101,31 @@ globals() and locals()
 #   meaning you can input [x*5 for x in range(2,10,2)] and it will return [10,20,30,40]
 
 '''OPEN CLOSE WRITE READ RENAME REMOVE FILE THINGS'''
+#open file function creates a file object syntax:
+#file object = open(file_name [, access_model][, buffering])
 
- 
-    
+#access_model refers to the mode of when the file is opened, ie read, write, append
+#buffering is some weird thing doesnt seem that important, if u set to 0, no buffering happens
+
+#attributes you can print that will return info about the file, w file being filename
+#   file.closed     true or false,    file.mode returns mode,   file.name returns name,
+#   file.softspace  returns false if explicitly required with print, true otherwise
+
+#filename.close() to close
+#fileobject.write( "quote" ) will write to the file
+#fileobject.read([count])   if count is missing it tries to read as much as possible
+#   count is bytes which is basically characters including spaces
+
+#tell() will tell you the current position within the file, where the enxt read or write will occur
+# seek(offset[,from]) method changes from the current file position
+#       offset indicates number of bytes to be moved, from is the reference position, 0 is the 
+#       beginning as default
+
+#rename files you do os.rename(current_file_name, new_file_name), which includes the .txt or whatever
+#remove you do os.remove(file_name)   ***IN QUOTES BY THE WAY AS IN THE FILENAME
+
+
+#os.mkdir("newdir") makes a new directory called newdir
+#os.chdir("newdir") changes directory to newdir directory
+#os.getcwd() gets current directory
+#os.rmdir('dirname') removes directory

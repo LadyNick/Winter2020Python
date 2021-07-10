@@ -129,3 +129,73 @@ globals() and locals()
 #os.chdir("newdir") changes directory to newdir directory
 #os.getcwd() gets current directory
 #os.rmdir('dirname') removes directory
+
+'''CLASSES AND OBJECTS'''
+
+#a class is a user defined protoype for an object  w attributes and functions
+
+class ClassName:
+    'Optional class documentation string'
+    class_suite
+    
+#doc string can be accessed via ClassName._doc_
+#class_suite has all the component statements defining class members, data attributed and functions
+
+#example python class
+
+class Employee:
+    'Common base class for all employees'
+    empCount = 0
+    
+    def _init_(self, name, salary):
+        self.name = name
+        self.salary = salary
+        Employee.empCount += 1
+        
+    def displayCount(self):
+        print "Total Employee %d" % Employee.empCount
+        
+    def displayEmployee(self):
+        print "Name: ", self.name, "Salary: ", self.salary
+
+#empCount is a class variable shared among all instances of the class
+# the _init_ is the equivalent to constructor functions, in python theyre called methods
+#you can declare other normal functions
+#the self is saying like to itself object
+
+#example of calling would be, emp1 = Employee("Zara", 2000)
+#emp1.displayEmployee() 
+
+#getattr(obj,name[,default]) - to access the attribute of the object
+#hasattr(obj,name) - to check if an attribute exists or not
+#setattr(obj,name,value) - to set an attribute. If attribue does not exist, then it would be created
+#delattr(obj,name) - to delete an attribute 
+
+#build in class attributes
+#   _dict_ dictionary w class's namespace
+#   _doc_ class doc string or none if undefined
+#   _name_ class name
+#   _module_ module name in which the class is defined,  "_main_" if in interactive mode
+#   _base_ a possibly empty tuple containing the base classes 
+# del to delete objects
+
+#DEFINE CLASSES IN A SEPARATE FILE AND IMPORT THEM VIA import
+
+#class inheritance:
+#class SubClassName (ParentClass1[,ParentClass2,...]):
+    'optional doc string'
+    #class_suite
+
+#issubclass(sub,superior) boolean function returns true if subclass sub is a subclass of the super class
+#isinstance(obj,class) returns true if obj is an instance of class class
+#ofc you can override parent functions
+
+VVV TWO UNDERSCORES 
+
+#_init_(self[,args...]) constructor
+#_del_(self) destructor
+#_cmp_(self,x) object comparison
+
+#TO MAKE PRIVATE VARIABLES, you do a double underscore before the variable
+#       __secretCount = 0
+#it can become accessible if you do objectname._classname__secretCount, but otherwise it cant
